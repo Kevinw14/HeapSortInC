@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include "Node.h"
 
+#ifndef stack_h
+#define stack_h
+
 typedef struct stack {
     int count;
     Node *head;
@@ -29,3 +32,5 @@ int stack_size(Stack *stack);
 
 // Checks to see if the stack is empty
 int stack_is_empty(Stack *stack);
+
+#endif /* stack_h */

@@ -8,6 +8,9 @@
 #include "Stack.h"
 #include "Queue.h"
 
+#ifndef heap_h
+#define heap_h
+
 typedef struct heap {
     int count;
     Stack *stack;
@@ -32,3 +35,5 @@ void heap_level_order_traversal(Heap *heap);
 
 // Sorts the heap from smallest to largest
 void heap_sort(Heap *heap);
+
+#endif /* heap_h */

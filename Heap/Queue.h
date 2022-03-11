@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include "Node.h"
 
+#ifndef queue_h
+#define queue_h
+
 typedef struct queue {
     int count;
     Node *head;
@@ -31,3 +34,5 @@ int queue_size(Queue *queue);
 
 // Checks to see if the queue is empty.
 int queue_is_empty(Queue *queue);
+
+#endif /* queue_h */

@@ -6,6 +6,9 @@
 
 #include <stdlib.h>
 
+#ifndef treenode_h
+#define treenode_h
+
 typedef struct treenode {
     int data;
     struct treenode* left;
@@ -16,3 +19,5 @@ typedef struct treenode {
 
 // Initalizes a TreeNode
 TreeNode* treenode_init(int data);
+
+#endif /* treenode_h */

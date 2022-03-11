@@ -7,6 +7,9 @@
 #include <stdlib.h>
 #include "TreeNode.h"
 
+#ifndef node_h
+#define node_h
+
 typedef struct node {
     TreeNode* data;
     struct node *next;
@@ -14,3 +17,5 @@ typedef struct node {
 
 // Initializes a Node
 Node* node_init(TreeNode *data);
+
+#endif /* node_h */
